@@ -68,7 +68,7 @@
    * spacing
    */
 
-  --section-padding: 60px;
+  --section-padding: 30px;
 
   /**
    * shadow
@@ -274,6 +274,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: var(--transition-2);
+  /* transform: rotate(-90deg); */
 }
 
 .header.nav-active .navbar {
@@ -562,7 +563,9 @@ body {
 /*-----------------------------------*\
   #SKILLS
 \*-----------------------------------*/
-
+.skills-header {
+  padding-top: 50px;
+}
 .skills .section-title { margin-block-end: 20px; }
 
 .skills .section-text { margin-block-end: 70px; }
@@ -570,6 +573,7 @@ body {
 .skills-list {
   display: grid;
   gap: 25px;
+  padding: 30px;
 }
 
 .skills-item .wrapper {
@@ -609,7 +613,7 @@ body {
 
 .contact-card {
   background-color: var(--midnight-blue);
-  padding: 50px 25px;
+  padding: 30px 25px;
   border-radius: var(--radius-20);
 }
 
@@ -695,7 +699,10 @@ textarea.contact-input {
   #BLOG
 \*-----------------------------------*/
 
-.blog { padding-block-end: 120px; }
+.blog { 
+  padding-block-end: 50px; 
+  margin-top: -70px;
+}
 
 .blog .section-title { margin-block-end: 20px; }
 
