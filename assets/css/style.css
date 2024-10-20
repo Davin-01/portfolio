@@ -183,6 +183,7 @@ body {
   padding: var(--padding, 10px 40px);
   border-radius: 50px;
   transition: var(--transition-2);
+  background-color: blue;
 }
 
 .btn-primary.blue { background-color: var(--klein-blue); }
@@ -292,6 +293,124 @@ body {
 .navbar .btn {
   background-color: var(--orange-soda);
   margin-block-start: 15px;
+}
+body {
+  margin: 0;
+  padding: 100px;
+  font-family: sans-serif;
+  background: linear-gradient(#070a0f, #6596cf);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #121c29;
+  align-items: center;
+  align-self: flex-end;
+  margin-bottom: 20px;
+ 
+}
+.navbar {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  padding-inline: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition-2);
+}
+
+.header.nav-active .navbar {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navbar-link {
+  color: var(--white);
+  font-family: var(--ff-barlow);
+  padding-block: 3px;
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
+
+.navbar .btn {
+  background-color: var(--orange-soda);
+  margin-block-start: 15px;
+}
+ 
+
+.container h1 {
+  color: #fff;
+  font-size: 50px;
+ 
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #213c5c;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  display: flexbox;
+  border-radius: 10px;
+  border-color: #fff;
+  border-style: solid;
+  background-color: #262b31;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  margin-top: 30px;
+  
+}
+.name {
+  color: linear-gradient(#666a72, #c3c7cc);
+}
+.projects li {
+  display: flexbox;
+  border-radius: 10px;
+  border-color: #fff;
+  border-style: solid;
+  background-color: #0a1d33;
+  padding: 10px;
+  display: inline;
+  margin-bottom: 20px;
+}
+.links {
+  margin-bottom: 20px;
+}
+.active {
+  width: 100px;
+  border-radius: 10px;
+  border-color: #fff;
+  border-style: solid;
+  background-color: #0a1d33;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.projects h4 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+ 
+
+}
+.frame {
+  text-align: center;
+}
+.spotify {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f2f4e;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 
@@ -475,7 +594,7 @@ body {
 }
 
 .skills-progress {
-  background-color: var(--orange-soda);
+  background-color: blue;
   height: 100%;
   border-radius: inherit;
 }
